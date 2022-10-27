@@ -25,11 +25,15 @@ function* count(n) {
     }
 }
 
-const counter = count(7);
+for (let k of count(7)) {
+    console.log(k);
+}
 
-console.log(counter.next().value);
-console.log(counter.next().value);
-console.log(counter.next().value);
+// const counter = count(7);
+
+// console.log(counter.next().value);
+// console.log(counter.next().value);
+// console.log(counter.next().value);
 
 // ------------------------------------------------
 
